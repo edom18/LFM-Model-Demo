@@ -34,8 +34,18 @@ python -m venv .venv
 
 有効化されると、ターミナルの先頭に `(.venv)` と表示されます。
 
-### 4. 必要なライブラリのインストール
-以下のコマンドを実行して、AI の実行に必要なパッケージを一括インストールします。
+### 4. PyTorch のインストール
+使用している PC の環境（GPU の有無や CUDA のバージョン）に合わせて PyTorch をインストールします。
+
+1. [PyTorch 公式サイト](https://pytorch.org/get-started/locally/) にアクセスします。
+2. 「PyTorch Build」「OS」「Package (Pip 推奨)」「Language (Python)」「Compute Platform (CUDA バージョンなど)」を自身の環境に合わせて選択します。
+3. 表示された **Run this Command** のコマンドをコピーし、ターミナルで実行してください。
+
+> [!IMPORTANT]
+> NVIDIA 製 GPU を使用している場合は、自身の環境の CUDA バージョンに合ったもの（例: CUDA 12.1、CUDA 12.4 など）を必ず選択してください。
+
+### 5. その他のライブラリのインストール
+PyTorch のインストールが完了したら、その他の必要なライブラリを一括インストールします。
 
 ```bash
 pip install -r requirements.txt

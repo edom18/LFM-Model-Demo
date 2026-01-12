@@ -65,14 +65,17 @@ video {
     align-items: center;
 }
 
-input[type="text"] {
+textarea#prompt-input {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     color: var(--text-color);
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    width: 300px;
+    width: 400px;
+    height: 80px;
     font-size: 1rem;
+    resize: vertical;
+    font-family: inherit;
 }
 
 button {
@@ -142,8 +145,15 @@ button.stop {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 canvas {

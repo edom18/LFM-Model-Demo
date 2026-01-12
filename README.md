@@ -42,6 +42,16 @@ pip install -r requirements.txt
 ```
 
 > [!NOTE]
+> `pip install` でインストールされる `transformers` のバージョンがまだ最新が配信されていないようなので、もし実行時に以下のエラーが出たら GitHub から直接インストールを実行してください。
+> ```log
+> ValueError: Tokenizer class TokenizersBackend does not exist or is not currently imported.
+> ```
+> 以下のコマンドでインストールを実行してください。
+> ```bash
+> pip install -U git+https://github.com/huggingface/transformers.git@3c2517727ce28a30f5044e01663ee204deb1cdbe
+> ```
+
+> [!NOTE]
 > インストールには数分かかる場合があります。
 
 ## サーバーの起動

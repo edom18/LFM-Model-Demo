@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFM Vision Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LFM Vision Demo</h1>
+    </header>
+    
+    <div class="main-container">
+        <div class="video-section">
+            <video id="camera-view" autoplay playsinline muted></video>
+            <canvas id="capture-canvas"></canvas>
+            
+            <div class="controls">
+                <input type="text" id="prompt-input" value="この写真にはなにが写っていますか？" placeholder="プロンプトを入力...">
+                <button id="toggle-btn">開始</button>
+            </div>
+        </div>
+        
+        <div class="log-section">
+            <div class="log-header">
+                解析ログ
+            </div>
+            <div id="log-container" class="log-container">
+                <!-- logs go here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

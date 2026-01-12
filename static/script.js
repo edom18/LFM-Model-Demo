@@ -6,6 +6,7 @@ let canvas = null;
 let promptInput = null;
 let toggleButton = null;
 let logContainer = null;
+let clearLogsButton = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     video = document.getElementById('camera-view');
@@ -13,8 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     promptInput = document.getElementById('prompt-input');
     toggleButton = document.getElementById('toggle-btn');
     logContainer = document.getElementById('log-container');
+    clearLogsButton = document.getElementById('clear-logs-btn');
 
     toggleButton.addEventListener('click', toggleAnalysis);
+    clearLogsButton.addEventListener('click', () => {
+        logContainer.innerHTML = '';
+    });
 
     // Initialize camera
     startCamera();

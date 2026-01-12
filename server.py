@@ -61,7 +61,8 @@ async def analyze(
         
         # Generate
         outputs = model.generate(**inputs, max_new_tokens=64)
-        result = processor.batch_decode(outputs, skip_special_tokens=True)[0]
+        generated_ids = outputs[:, inputs.input_ids.shape[1]:]
+        result = processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
         
         return {"result": result}
     except Exception as e:

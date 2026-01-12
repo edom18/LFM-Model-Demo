@@ -107,9 +107,6 @@ function addLog(text, promptText = "") {
     const time = new Date().toLocaleTimeString();
     
     let content = `<div class="log-timestamp">${time}</div>`;
-    if (promptText) {
-        content += `<div class="log-prompt">Prompt: ${promptText}</div>`;
-    }
     content += `<div class="log-result">${text}</div>`;
     
     item.innerHTML = content;

@@ -1,6 +1,6 @@
 # LFM Vision Demo
 
-LiquidAI が公開している高効率な VLM (Vision Language Model) **「LFM2.5-VL-1.6B」** を使用した、リアルタイム Web カメラ解析デモプロジェクトです。
+LiquidAI が公開している高効率な VLM (Vision Language Model) **「[LFM2.5-VL-1.6B](https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B)」** を使用した、リアルタイム Web カメラ解析デモプロジェクトです。
 
 ブラウザからカメラ映像を送信し、AI がその内容をテキストで解説します。
 
